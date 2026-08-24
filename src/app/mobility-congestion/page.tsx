@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, Search, X, ChevronDown } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 
 const imageBase = "https://performance.oki.org/wp-content/uploads";
 
@@ -61,7 +61,7 @@ function Header() {
                   aria-current={pathname === href ? "page" : undefined}
                 >
                   {label}
-                  <ChevronDown size={14} style={{ display: "inline-block", marginLeft: "4px" }} />
+                  <span style={{ fontSize: "10px", marginLeft: "4px" }}>▼</span>
                 </a>
                 {mobilityOpen && (
                   <div className="dropdown-menu">
